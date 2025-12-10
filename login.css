@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/webi.jpg)
+}
+
+
+
+
+.container {
+    background: transparent;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px orange;
+    width: 350px;
+}
+
+.form-login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-login input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-login button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-login button:hover {
+    background-color: black;
+}
+
+.form-login p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.form-login a {
+    color: orange;
+    text-decoration: none;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}

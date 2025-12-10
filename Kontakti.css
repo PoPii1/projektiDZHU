@@ -1,0 +1,102 @@
+*
+body {
+  background-image: url(images/webi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+li {
+  float: left;
+}
+
+ul li{
+  margin-left: 20px;
+}
+
+ul li:first-child{
+  margin-right: auto;
+}
+
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover {
+  background-color: black;
+  color: white;
+}
+  ul li p {
+  
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+
+  }
+  ul li p:hover{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+  .form {
+    padding: 45px;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    
+  }
+
+  .form input {
+    background: #e2e2e2d8;
+    width: 85%;
+    border: 0;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 14px;
+
+  }
+  .form textarea{
+    background: #e2e2e2d8;
+    width: 85%;
+    height: 65px;
+    border: 0;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .form button {
+    background: #c45e4a;
+    width: 92%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: white;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #c45e4a;
+  }
