@@ -1,0 +1,87 @@
+*
+body {
+  background-image: url(images/webi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+li {
+  float: left;
+}
+
+ul li{
+  margin-left: 20px;
+}
+
+ul li:first-child{
+  margin-right: auto;
+}
+
+
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover {
+  background-color: black;
+  color: white;
+}
+  ul li p {
+  
+    margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+
+  }
+  ul li p:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+h2{
+  text-align: center;
+  color: white;
+}
+
+p{
+  text-align: center;
+  color: white;
+}
+
+.talk{
+  color: white;
+}
+
+.form-submit{
+  display: flex;
+  justify-content: center;
+
+}
+
+.size-btn.active,
+.size-btn:hover {
+    background: orange;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    
+}
+
