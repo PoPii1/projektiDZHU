@@ -30,12 +30,12 @@
             <span class="icon">−</span>
         </div>
 
-        <ul class="filter-list">
+       <ul class="filter-list">
+
             <li><input type="checkbox"> BEARD OIL</li>          
             <li><input type="checkbox"> FRAGRANCE GIFT SETS</li>
             <li><input type="checkbox"> PERFUMES & COLOGNES</li>
             <li><input type="checkbox"> SHIMMERING BODY OIL</li>
-        </ul>
     </div>
 
     <div class="filter-section">
@@ -286,7 +286,7 @@ function toggleList(header) {
     const icon = header.querySelector(".icon");
 
     if (list.style.display === "none") {
-        list.style.display = "block";
+        list.style.display = "flex";
         icon.textContent = "−";
     } else {
         list.style.display = "none";

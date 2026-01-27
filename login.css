@@ -1,27 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+* 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+ 
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(images/webi.jpg)
+li {
+  float: left;
+}
+
+ul li{
+  margin-left: 20px;
 }
 
 
+ul li:first-child{
+  margin-right: auto;
+}
 
 
-.container {
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+  color: white;
+}
+  ul li p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  }
+  
+  ul li p:hover{
+    background-color: black;
+    color: white;
+  }
+
+
+  body {
+  background-image: url(images/webi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-container {
     background: transparent;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 10px 25px orange;
     width: 350px;
+
 }
 
 .form-login h2 {
@@ -31,7 +80,7 @@ body {
 }
 
 .form-login input {
-    width: 100%;
+    width: 93%;
     padding: 12px;
     margin: 8px 0;
     border-radius: 8px;

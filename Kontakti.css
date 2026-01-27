@@ -85,7 +85,7 @@ h1{
   }
 
   .form button {
-    background: #c45e4a;
+    background: orange;
     width: 92%;
     border: 0;
     padding: 15px;
@@ -98,5 +98,5 @@ h1{
     font-size: 12px;
   }
   .form .message a {
-    color: #c45e4a;
+    color: orange;
   }

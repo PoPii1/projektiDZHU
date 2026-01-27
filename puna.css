@@ -9,6 +9,9 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -33,6 +36,8 @@ li a:hover {
   
     margin-right: 1000px;
     margin-left: 10px;
+    font-size: 20px;
+    font-weight:  bold;
     color: whitesmoke;
 
   }
@@ -85,6 +90,9 @@ h2{
     padding: 0;
     margin: 0;
     color: white;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
 }
 
 .filter-list li {
@@ -98,6 +106,7 @@ h2{
 .filter-list input[type="checkbox"] {
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 
