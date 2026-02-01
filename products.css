@@ -23,7 +23,7 @@ li a {
   display: block;
   color: whitesmoke;
   text-align: center;
-  padding: 14px 16px;
+/*  padding: 8px 16px;*/
   text-decoration: none;
   
 }
@@ -109,27 +109,38 @@ h2{
     cursor: pointer;
 }
 
+.card1-group{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 300px; 
+    border-radius: 5px 5px 5px 5px; 
+
+}
+
+
 
 .card{
      float: right;
-     width: 14%;
+     width: 20%;
      box-shadow: 2px 2px 20px black;
-     border-radius: 5px; 
+     border-radius: 5px 5px 5px 5px; 
      margin: 3%;
      padding-right: 1px;
   
 }
 
+
 .image{
   display: flex;
   height: 230px;
-  object-fit: contain;
+  object-fit:cover;
 }
 
 .image img{
  width: 100%;
- border-top-right-radius: 5px;
- border-top-left-radius: 5px;
+ border-radius: 5px;
+ /* border-top-right-radius: 5px;
+ border-top-left-radius: 5px; */
 }
 
 .title{
@@ -151,7 +162,7 @@ h2{
 .size-btn {
     padding: 8px 16px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     background: white;
     cursor: pointer;
     font-size: 11px;
@@ -192,16 +203,20 @@ h2{
     color: white;
 }
 
-.card-group {
+ .card-group {
     display: flex;
-    flex-direction: column;
-    float: right;
-    width: 14%;
-    margin: 3%;
-}
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    /* width: 14%;
+    margin: 3%; */
+} 
 
 .card-group .card {
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } 
 

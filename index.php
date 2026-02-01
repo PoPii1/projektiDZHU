@@ -11,12 +11,12 @@
 <body>
     <ul>
          
-        <li><p>Perfume Shop</p></li>
-        
-        <li><a href="index.html">Home</a></li>
-        <li><a href="puna.html">Work</a></li>
-        <li><a href="rrethnesh.html">About Us</a></li>
-        <li><a href="kontakti.html">Contact</a></li>
+        <li><a href="index.php"><p>Perfume Shop</p></a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="news.php">News</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="aboutUs.php">About Us</a></li>
+        <li><a href="kontakti.php">Contact</a></li>
        
         
           </ul>

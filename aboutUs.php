@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" type="text/css" href="rrethnesh.css">
+ <link rel="stylesheet" type="text/css" href="aboutUs.css">
 
 </head>
 
@@ -13,11 +13,12 @@
     
 <ul>
          
-        <li><p>Perfume Shop</p></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="puna.html">Work</a></li>
-        <li><a href="rrethnesh.html">About Us</a></li>
-        <li><a href="kontakti.html">Contact</a></li>
+        <li><a href="index.php"><p>Perfume Shop</p></a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="news.php">News</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="aboutUs.php">About Us</a></li>
+        <li><a href="kontakti.php">Contact</a></li>
        
         
  </ul>
@@ -58,7 +59,7 @@ inspiring scents that make every moment memorable</p>
 <br>
 
 <div class="form-submit">
-<button class="size-btn active"><a href="kontakti.html">Contact Us</button></a>
+<button class="size-btn active"><a href="kontakti.php">Contact Us</button></a>
 </div>
 
 

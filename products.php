@@ -1,21 +1,31 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "login_system");
+
+if ($conn->connect_error) { die("Lidhja dështoi: " . $conn->connect_error); }
+
+$sql = "SELECT * FROM news ORDER BY data_postimit DESC";
+$result = $conn->query($sql);
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
- <title>Puna</title>
+ <title>Products</title>
 </head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="puna.css">
+    <link rel="stylesheet" type="text/css" href="products.css">
 
 <body>
     
      <ul>         
-        <li><p>Perfume Shop</p></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="puna.html">Work</a></li>
-        <li><a href="rrethnesh.html">About Us</a></li>
-        <li><a href="kontakti.html">Contact</a></li>
+        <li><a href="index.php"><p>Perfume Shop</p></a></li>
+        <li><a href="index.php">Home</a></li>
+         <li><a href="news.php">News</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="aboutUs.php">About Us</a></li>
+        <li><a href="kontakti.php">Contact</a></li>
           </ul>
 
           <h2>Our Perfumes</h2>
@@ -64,6 +74,7 @@
 
  
 
+<div class="card1-group">
 <div class="card">
 
 <div class="image">
@@ -90,8 +101,8 @@ DIOR SAVAUGE</h1>
 
 
 
-<div class="card">
 
+<div class="card">
 <div class="image">
    <img src="images/saint.jpg">
 </div>
@@ -119,8 +130,7 @@ YSENT LAURANT</h1>
 
 
 <div class="card">
-
-<div class="image">
+ <div class="image">
    <img src="images/tiffany.jpg">
 </div>
 <div class="size-options">
@@ -141,39 +151,18 @@ TIFFANY</h1>
 </div>
 </div>
 
+ <?php //if ($result->num_rows > 0): ?>
+            <?php //while($row = $result->fetch_assoc()): ?>
+<?php  //require_once 'product.php'; ?>
+<?php //endwhile; ?>
+        <?php //else: ?>
+           <!-- <p style="color: white;">Nuk ka lajme për të shfaqur.</p>  -->
+        <?php //endif; ?> 
 
-<div class="card-group">
 
-<div class="card">
 
-<div class="image">
-   <img src="images/villian.jpg">
-</div>
-<div class="size-options">
-            <button class="size-btn active">50 ml</button>
-            <button class="size-btn">30 ml</button>
-            <button class="size-btn">250 ml</button>
-        </div>
-<div class="title">
- <h1>
-    VILLIAN
-</h1>
-</div>
-<div class="des">
-    <div class="rating">★★★★★ <span></span></div>
-    <p> 
-        PARFUM
-    </p>
-    <p>Cmimi: 200€</p>
-    <button class="add-to-bag">ADD TO BAG</button>
-</div>
-</div>
-</div>
-
-<div class="card-group">
 
 <div class="card">
-
 <div class="image">
    <img src="images/inspire.jpg">
 </div>
@@ -199,8 +188,9 @@ TIFFANY</h1>
 </div>
 </div>
 
-<div class="card">
 
+
+<div class="card">
 <div class="image">
    <img src="images/Ford.jpg" alt="">
 </div>
@@ -227,8 +217,9 @@ TIFFANY</h1>
 
 
 
-<div class="card">
 
+
+<div class="card">
 <div class="image">
 <img src="images/jean.jpg" alt="">
 </div>
@@ -253,11 +244,36 @@ TIFFANY</h1>
 </div>
 </div>
 
+<div class="card">
+<div class="image">
+<img src="images/villian.jpg" alt="">
+</div>
+<div class="size-options">
+            <button class="size-btn active">50 ml</button>
+            <button class="size-btn">30 ml</button>
+            <button class="size-btn">250 ml</button>
+        </div>
+<div class="title">
+ <h1>
+    VILLIAN
+</h1>
+</div>
+<div class="des">
+     <div class="rating">★★★★★ <span></span></div>
+    <p> 
+        PARFUM
+    </p>
+    <p>Cmimi: 303€</p>
+    <button class="add-to-bag">ADD TO BAG</button>
+
+</div>
+</div>
+
+
 
 <div class="card">
-
-    <div class="image">
-    <img src="images/SPICE.jpg" alt="">
+<div class="image">
+<img src="images/SPICE.jpg" alt="">
     </div>
     <div class="size-options">
             <button class="size-btn active">50 ml</button>
@@ -277,7 +293,7 @@ TIFFANY</h1>
         <p>Cmimi: 101€</p>
          <button class="add-to-bag">ADD TO BAG</button>
     </div>
-    </div>
+    </div>  
     
 <script>
 function toggleList(header) {
@@ -298,6 +314,6 @@ function toggleList(header) {
 
 </div>
 </div>
-</div>
+</div> 
 </body>
 </html>
