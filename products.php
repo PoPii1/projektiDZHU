@@ -270,7 +270,7 @@ TIFFANY</h1>
 </div>
 
 
-
+<!-- 
 <div class="card">
 <div class="image">
 <img src="images/SPICE.jpg" alt="">
@@ -293,7 +293,9 @@ TIFFANY</h1>
         <p>Cmimi: 101€</p>
          <button class="add-to-bag">ADD TO BAG</button>
     </div>
-    </div>  
+    </div>  -->
+
+
     
 <script>
 function toggleList(header) {

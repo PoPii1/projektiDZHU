@@ -55,10 +55,14 @@ echo "Welcome Admin!";
             <input type="text" name="pershkrimi" placeholder="Përshkrimi..." required>
              <input type="file" name="fajlli" accept=".jpg, .npg, ,pdf, .jpeg" required><br>
             <button type="submit" name="submit_news">Posto Lajmin</button>
+            
+    <td>
+    <a href="fshij.php?id=<?php echo $row['id']; ?>" onclick="return confirm('A jeni i sigurt?')">Fshij</a>
+</td>
 
+           <a href="edit_permbajtja.php?id=<?php echo $row['id']; ?>">Edito</a>
         </form>
-    </div>
-
+    </div>>
     
     
   

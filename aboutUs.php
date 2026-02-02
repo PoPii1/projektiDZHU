@@ -1,3 +1,35 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "login_system");
+
+// me gjet tekstin nga db
+function merrTekstin($faqja, $seksioni, $conn) {
+    $sql = "SELECT teksti FROM faqet_permbajtja WHERE faqja = '$faqja' AND seksioni = '$seksioni'";
+    $result = $conn->query($sql);
+    if ($row = $result->fetch_assoc()) {
+        return $row['teksti'];
+    }
+    return "Teksti nuk u gjet.";
+}
+?>
+
+<!-- <!DOCTYPE html>    
+<html>
+<head>
+    <title>About Us</title>
+</head>
+<body>
+    <<div class="container">
+    <h1>Rreth Nesh</h1> 
+    <p><?php  //echo merrTekstin('about_Us', 'Pershkrimi', $conn); ?></p>
+</div>
+</body>
+</html> -->
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

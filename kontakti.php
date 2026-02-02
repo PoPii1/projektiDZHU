@@ -1,3 +1,29 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "login_system");
+
+if ($conn->connect_error) {
+    die("Lidhja dështoi: " . $conn->connect_error);
+}
+
+if (isset($_POST['submitbtn'])) {
+ //te dhenat pastrohen pas alertit
+    $emri = $conn->real_escape_string($_POST['full_name']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $tel = $conn->real_escape_string($_POST['phone']);
+    $mesazhi = $conn->real_escape_string($_POST['message']);
+
+    $sql = "INSERT INTO mesazhet (emri, email, telefoni, mesazhi) 
+            VALUES ('$emri', '$email', '$tel', '$mesazhi')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "<script>alert('Mesazhi u dërgua me sukses!'); window.location='kontakti.php';</script>";
+    } else {
+        echo "Gabim: " . $conn->error;
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,17 +52,17 @@
 			<br>
 
       <div class="form">
-      <form class="login-form">
+      <form class="login-form" method="POST" action="kontakti.php">
 
            <h1>CONTACT US</h1>
 
       <br>
 
-          <input type="text" placeholder="Full Name"/>
-          <input type="email" placeholder="Email"/>
-          <input type="text" placeholder="Phone Number"/>
-          <textarea name="comment" form="contactform" placeholder="Enter your message here..."></textarea>
-          <button name="submitbtn">Send</button>
+          <input type="text" name="full_name" placeholder="Full Name" required/>
+          <input type="email" name="email" placeholder="Email" required/>
+          <input type="text" name="phone" placeholder="Phone Number"/>
+          <textarea name="message" form="contactform" placeholder="Enter your message here..." required></textarea>
+          <button type="submit" name="submitbtn">Send</button>
 
           <p class="message"> We would love to hear your opinion.</p>
 
