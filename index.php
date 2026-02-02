@@ -1,3 +1,11 @@
+<!-- <?php
+
+setcookie("perdoruesi", "Filan Fisteku", time() + 3600, "/"); 
+?> -->
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +17,17 @@
   
 </head>
 <body>
-    <ul>
+
+<!-- <ul>...</ul> <div class="welcome-msg">
+        <?php
+        //if(isset($_COOKIE['vizitor'])) {
+            echo "<h1>Mirësevini përsëri në Perfume Shop!</h1>";
+       // } //else {
+           // echo "<h1>Mirësevini për herë të parë! Eksploroni aromat tona.</h1>";
+       // }
+        ?>
+    </div>
+    <ul> -->
          
         <li><a href="index.php"><p>Perfume Shop</p></a></li>
         <li><a href="index.php">Home</a></li>
