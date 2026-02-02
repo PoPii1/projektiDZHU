@@ -1,6 +1,6 @@
 <?php
 $conn = new mysqli("localhost", "root", "", "login_system");
-$id = $_GET['id']; // Merr ID-në nga URL
+$id = $_GET['id']; // Merr ID-n nga URL
 
 $sql = "DELETE FROM mesazhet WHERE id = $id";
 

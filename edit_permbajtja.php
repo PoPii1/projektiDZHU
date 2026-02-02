@@ -3,11 +3,11 @@
 $conn = new mysqli("localhost", "root", "", "login_system");
 $id = $_GET['id'];
 
-// 1. Merr të dhënat aktuale që t'i shfaqësh në formë
+
 $res = $conn->query("SELECT * FROM faqet_permbajtja WHERE id = $id");
 $row = $res->fetch_assoc();
 
-// 2. Nëse klikohet butoni "Ruaj", bëhet Update
+// Nëse behet submit, behet Update
 if (isset($_POST['ruaj'])) {
     $teksti_ri = $conn->real_escape_string($_POST['teksti']);
     

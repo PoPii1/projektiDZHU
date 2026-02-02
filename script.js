@@ -1,4 +1,4 @@
-// LOGIN
+
 const loginForm = document.getElementById("loginForm");
 if (loginForm) {
     loginForm.addEventListener("submit", function(e) {
@@ -11,7 +11,7 @@ if (loginForm) {
     });
 }
 
-// REGISTER
+
 const registerForm = document.getElementById("registerForm");
 if (registerForm) {
     registerForm.addEventListener("submit", function(e) {
@@ -33,7 +33,8 @@ if (registerForm) {
     });
 }
 
-// CONTACT
+
+
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
     contactForm.addEventListener("submit", function(e) {

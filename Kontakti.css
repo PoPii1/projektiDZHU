@@ -15,9 +15,6 @@ ul {
 
 }
 
-li {
-  float: left;
-}
 
 ul li{
   margin-left: 20px;
@@ -86,7 +83,7 @@ h1{
 
   .form button {
     background: orange;
-    width: 92%;
+    width: 90%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
